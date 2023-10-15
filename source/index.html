@@ -214,8 +214,26 @@
             <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
 
               <!-- Price -->
-              <div class="filter__price">
+              <div class="filter-price">
+                <p class="filter-price__heading">Цена</p>
+                <div class="filter-price__range">
+                  <div class="filter-price__range-controls">
+                    <div class="filter-price__range-scale">
+                      <div class="filter-price__range-bar">
 
+                      </div>
+                    </div>
+                    <div class="filter-price__range-toggles">
+                      <div class="filer-price__range-toggle filer-price__range-toggle--min"></div>
+                      <div class="filer-price__range-toggle filer-price__range-toggle--max"></div>
+                    </div>
+                    <div class="filter-price__controls">
+                      <input type="text" class="filter-price__control filter-price__control--min" value="0">
+                      <span class="filter-price__control-divider"></span>
+                      <input type="text" class="filter-price__control filter-price__control--max" value="999">
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <!-- Milk -->
@@ -223,19 +241,86 @@
                 <!-- только животное -->
                 <!-- Только растительное -->
                 <!-- Без молока -->
-              <div class="filter__milk">
-
-              </div>
+              <fieldset class="filter-milk">
+                <legend class="filter__heading">Наличие молока</legend>
+                <ul class="milk-list">
+                  <li class="milk-list__item">
+                    <label class="milk-list__label">
+                      <input class="milc-list__input" type="radio" name="radio" value="Неважно" checked>
+                      <span class="milk-list__radio"></span>
+                      <span class="milk list__text">Неважно</span>
+                    </label>
+                  </li>
+                  <li class="milk-list__item">
+                    <label class="milk-list__label">
+                      <input class="milc-list__input" type="radio" name="radio" value="Только животное">
+                      <span class="milk-list__radio"></span>
+                      <span class="milk list__text">Только животное</span>
+                    </label>
+                  </li>
+                  <li class="milk-list__item">
+                    <label class="milk-list__label">
+                      <input class="milc-list__input" type="radio" name="radio" value="Только растительное">
+                      <span class="milk-list__radio"></span>
+                      <span class="milk list__text">Только растительное</span>
+                    </label>
+                  </li>
+                  <li class="milk-list__item">
+                    <label class="milk-list__label">
+                      <input class="milc-list__input" type="radio" name="radio" value="Без молока" disabled>
+                      <span class="milk-list__radio"></span>
+                      <span class="milk list__text">Без молока</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
               <!-- Country of origin -->
-                <!-- Бразилия -->
-                <!-- Эфиопия -->
-                <!-- Колумбия -->
-                <!-- Коста-Рика -->
-                <!-- Перу -->
-              <div class="filter__country">
-
-              </div>
+              <fieldset class="filter-country">
+                <legend class="filter__heading">Страна произростания</legend>
+                <ul class="country-list">
+                    <!-- Бразилия -->
+                    <li class="country-list__item">
+                      <label class="country-list__label">
+                        <input class="country-list__input" type="checkbox" name="checkbox" value="Бразилия" checked>
+                        <span class="country-list__checkbox"></span>
+                        <span class="country-list__text">Бразилия</span>
+                      </label>
+                    </li>
+                    <!-- Эфиопия -->
+                  <li class="country-list__item">
+                    <label class="country-list__label">
+                      <input class="country-list__input" type="checkbox" name="checkbox" value="Эфиопия">
+                      <span class="country-list__checkbox"></span>
+                      <span class="country-list__text">Эфиопия</span>
+                    </label>
+                  </li>
+                  <!-- Колумбия -->
+                  <li class="country-list__item">
+                    <label class="country-list__label">
+                      <input class="country-list__input" type="checkbox" name="checkbox" value="Колумбия">
+                      <span class="country-list__checkbox"></span>
+                      <span class="country-list__text">Колумбия</span>
+                    </label>
+                  </li>
+                  <!-- Коста-Рика -->
+                  <li class="country-list__item">
+                    <label class="country-list__label">
+                      <input class="country-list__input" type="checkbox" name="checkbox" value="Коста-Рика">
+                      <span class="country-list__checkbox"></span>
+                      <span class="country-list__text">Коста-Рика</span>
+                    </label>
+                  </li>
+                  <!-- Перу -->
+                  <li class="country-list__item">
+                    <label class="country-list__label">
+                      <input class="country-list__input" type="checkbox" name="checkbox" value="Перу" disabled>
+                      <span class="country-list__checkbox"></span>
+                      <span class="country-list__text">Перу</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
               <!-- Buttons -->
               <!-- Применить фильтр - Сбросить фильтр -->
               <div class="filter__buttons">
