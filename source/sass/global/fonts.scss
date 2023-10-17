@@ -1,1 +1,36 @@
 /* здесь подключите шрифты*/
+@font-face {
+  font-family: "Montserratt Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:  url("/source/fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("/source/fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserratt Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:  url("/source/fonts/Montserrat-Medium.woff2") format("woff2"),
+        url("/source/fonts/Montserrat-Medium.woff") format("wof");
+}
+
+@font-face {
+  font-family: "Montserratt Semi Bold";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:  url("/source/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("/source/fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserratt Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:  url("/source/fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("/source/fonts/Montserrat-Bold.woff") format("woff");
+}
