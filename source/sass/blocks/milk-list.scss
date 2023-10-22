@@ -1,0 +1,58 @@
+.milk-list {
+  margin: 23px 0 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 19px 0 0;
+  }
+}
+
+.milk-list__item {
+  font-family: $montserrat-regular;
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.milk-list__label {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  padding-bottom: 21px;
+  cursor: pointer;
+}
+
+.milk-list__radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 25px;
+  background: url("../../images/svg/radio-unchecked.svg") no-repeat 0 0;
+}
+
+
+/* Checked */
+.milk-list__input:checked + .milk-list__radio {
+  background-image: url("../../images/svg/radio-checked.svg");
+}
+
+/* Focused */
+.milk-list__input:not(:checked):hover + .milk-list__radio {
+  background-image: url("../../images/svg/radio-hover-focus.svg");
+}
+
+/* Disabled */
+.milk-list__input:disabled + .milk-list__radio,
+.milk-list__input:disabled:hover + .milk-list__radio {
+  background-image: url("../../images/svg/radio-disabled.svg");
+}
+
+.milk-list__input:checked:disabled + .milk-list__radio {
+  background-image: url("../../images/svg/radio-disabled-checked.svg");
+}
+
+.milk-list__input:disabled ~ .milk-list__text,
+.milk-list__input:not(:checked):disabled:hover ~ .milk-list__text {
+  color: $base-grey;
+}

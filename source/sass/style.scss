@@ -4,15 +4,27 @@
 @import "global/fonts";
 
 /* BLOCKS */
+@import "blocks/container";
 @import "blocks/header";
 @import "blocks/main-nav";
+@import "blocks/user-list";
+@import "blocks/site-list";
+@import "blocks/wrapper";
 @import "blocks/main";
-@import "blocks/container";
 @import "blocks/promo";
+@import "blocks/slider";
 @import "blocks/features";
 @import "blocks/catalog";
+@import "blocks/filter";
+@import "blocks/milk-list";
+@import "blocks/country-list";
+@import "blocks/sorting";
+@import "blocks/product-list";
+@import "blocks/pagination-list";
+@import "blocks/card";
 @import "blocks/map";
 @import "blocks/footer";
+@import "blocks/social-list";
 @import "blocks/footer-nav";
 @import "blocks/contact-list";
 @import "blocks/copyright";
